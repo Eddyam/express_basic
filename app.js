@@ -14,3 +14,8 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
+
+// Agregando otra ruta respondiendo texto
+app.get('/launchx', (req, res) => {
+    res.send('Bienvenidos a launchx')
+})
